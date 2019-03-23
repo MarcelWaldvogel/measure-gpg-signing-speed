@@ -1,0 +1,28 @@
+This is a revocation certificate for the OpenPGP key:
+
+pub   secp256k1 2019-03-15 [S]
+      15135317E4A49C76F95C97E25F5F0F003A37AC80
+uid          Theta <t@he.ta>
+
+A revocation certificate is a kind of "kill switch" to publicly
+declare that a key shall not anymore be used.  It is not possible
+to retract such a revocation certificate once it has been published.
+
+Use it to revoke this key in case of a compromise or loss of
+the secret key.  However, if the secret key is still accessible,
+it is better to generate a new revocation certificate and give
+a reason for the revocation.  For details see the description of
+of the gpg command "--generate-revocation" in the GnuPG manual.
+
+To avoid an accidental use of this file, a colon has been inserted
+before the 5 dashes below.  Remove this colon with a text editor
+before importing and publishing this revocation certificate.
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iHgEIBMIACAWIQQVE1MX5KScdvlcl+JfXw8AOjesgAUCXIvNgQIdAAAKCRBfXw8A
+OjesgF4yAP4glzvN/+vfBycnOT0MtgLC8B13OwyJnF/0QN28xx3DEwD9Gg2w7qKH
+B/eJYihK+1hEJ/9I/Qo7Lo3ZNzUfdcNtLpg=
+=s+5k
+-----END PGP PUBLIC KEY BLOCK-----

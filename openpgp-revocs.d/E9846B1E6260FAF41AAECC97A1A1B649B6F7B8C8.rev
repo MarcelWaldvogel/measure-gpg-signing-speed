@@ -1,0 +1,29 @@
+This is a revocation certificate for the OpenPGP key:
+
+pub   brainpoolP512r1 2019-03-15 [S]
+      E9846B1E6260FAF41AAECC97A1A1B649B6F7B8C8
+uid          Epsilon <e@ps.lo>
+
+A revocation certificate is a kind of "kill switch" to publicly
+declare that a key shall not anymore be used.  It is not possible
+to retract such a revocation certificate once it has been published.
+
+Use it to revoke this key in case of a compromise or loss of
+the secret key.  However, if the secret key is still accessible,
+it is better to generate a new revocation certificate and give
+a reason for the revocation.  For details see the description of
+of the gpg command "--generate-revocation" in the GnuPG manual.
+
+To avoid an accidental use of this file, a colon has been inserted
+before the 5 dashes below.  Remove this colon with a text editor
+before importing and publishing this revocation certificate.
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iLgEIBMKACAWIQTphGseYmD69BquzJehobZJtve4yAUCXIvNZAIdAAAKCRChobZJ
+tve4yM52Af48JTnMTvOLCjEPAp66IIu1afrx+zBxyOfvbUF6dATXG4gfZUBTKQR1
+ZwklUQ5bUkG4Lu1lPBkIq8ECPplVa+ROAgCDugRtw3Tvtk8Hlxy3iP8jyy3YSQD3
+tERo8Hu46BRatnnNqx+HCZPqaNt5rT90cRnaq/zXdeQns9178hEfN/7e
+=Yt39
+-----END PGP PUBLIC KEY BLOCK-----
