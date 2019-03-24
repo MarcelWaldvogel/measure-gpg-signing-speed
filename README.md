@@ -15,8 +15,8 @@ Each will sign its keyid (40 bytes) with itself ten (10) times and print the
 key (including its type) and the resulting time for all ten runs.
 
 To ensure a warm cache and that any necessary background processes are already
-running (notably `gpg-agent`), run the test twice and only report the second
-set of results.
+running (notably `gpg-agent`), run the test twice on an otherwise idle system
+and only report the second set of results.
 
 This is a single-threaded test, as `gpg` will serialize the actual private-key
 operation (in this case, signing) through the single `gpg-agent` anyway.
